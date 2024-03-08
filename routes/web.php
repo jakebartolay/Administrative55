@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Document;
-use App\Http\Controllers\Contract;
-use App\Http\Controllers\ContractController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -17,43 +15,26 @@ use App\Http\Controllers\ContractController;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('index');
-})->name('/');
+// Route::get('/dashboard', [AdminController::class, 'dashboard']);
 
-Route::view('index', 'index')->name('index');
-Route::view('createcontract', 'createcontract')->name('createcontract');
-Route::view('task', 'task')->name('task');
-Route::get('/contract',[Contract::class , 'contract'])->name('contract');
-Route::post('/add-contract', [ContractController::class, 'store'])->name('contracts.store');
-Route::get('/document',[Document::class, 'document'])->name('document');
-Route::view('reports', 'reports')->name('reports');
-Route::view('forget-password', 'forget-password')->name('forget-password');
-Route::view('sign-up', 'sign-up')->name('sign-up');
-Route::view('login', 'login')->name('login');
+Route::get('/', [AdminController::class, 'login'])->name('/');
 
+Route::get('/login', [AdminController::class, 'LoginAdmin'])->name('login');
 
-// Route for displaying the form to edit a document
-Route::get('/documents/{id}/edit', [DocumentController::class, 'edit'])->name('edit.document');
-// Route for deleting a document
-Route::delete('/documents/{id}', [DocumentController::class, 'destroy'])->name('delete.document');
+Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
+
+Route::get('/document', [AdminController::class, 'dashboard'])->name('document');
+
+Route::get('/contract', [AdminController::class, 'dashboard'])->name('contract');
+
+Route::get('/create', [AdminController::class, 'dashboard'])->name('createcontract');
+
+Route::get('/reports', [AdminController::class, 'dashboard'])->name('reports');
 
 
 
-Route::get('/forgot-password', function () {
-    
-})->name('forget-password');
 
-Route::get('/sign-up', function () {
-    
 
-Route::get('/', 'App\Http\Controllers\HomeController@index')->name('index');
-
-Route::get('/forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm')->name('forget-password');
-
-Route::get('/sign-up', 'App\Http\Controllers\Auth\RegisterController@showRegistrationForm')->name('sign-up');
-
-})->name('sign-up');
 
 
 

@@ -141,7 +141,7 @@
                                         </div>
                                     @endif
 
-                                    <form class="needs-validation theme-form" novalidate action="{{ route('login') }}"
+                                    <form class="needs-validation theme-form" novalidate action=""
                                         method="POST">
                                         @csrf
                                         <div class="d-flex justify-content-between align-items-center">
