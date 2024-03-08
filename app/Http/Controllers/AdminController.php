@@ -22,6 +22,19 @@ class AdminController extends Controller
     {
         return view('task');
     }
+    public function document()
+    {
+        return view('document');
+    }
+    public function contract()
+    {
+        return view('contract');
+    }
+
+    public function createcontract()
+    {
+        return view('createcontract');
+    }
 
     public function LoginAdmin(Request $request)
     {
