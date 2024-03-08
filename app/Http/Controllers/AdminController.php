@@ -22,10 +22,12 @@ class AdminController extends Controller
     {
         return view('task');
     }
+    
     public function document()
     {
         return view('document');
     }
+
     public function contract()
     {
         return view('contract');
@@ -43,5 +45,7 @@ class AdminController extends Controller
         return redirect()->route('index', compact('user'));
 
 
-        ///SET UP LOGIN NATIN MAMA
+        
     }
+
+}
