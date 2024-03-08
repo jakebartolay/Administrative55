@@ -21,27 +21,12 @@ Route::get('/', [AdminController::class, 'login'])->name('/');
 
 Route::get('/login', [AdminController::class, 'LoginAdmin'])->name('login');
 
-Route::get('/task', [AdminController::class, 'Task'])->name('task');
-
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
 
-Route::get('/document', [AdminController::class, 'dashboard'])->name('document');
+Route::get('/task', [AdminController::class, 'task'])->name('task');
 
+Route::get('/document', [AdminController::class, 'document'])->name('document');
 
-Route::get('/contract', [AdminController::class, 'dashboard'])->name('contract');
+Route::get('/contract', [AdminController::class, 'contract'])->name('contract');
 
-Route::get('/create', [AdminController::class, 'dashboard'])->name('createcontract');
-
-Route::get('/reports', [AdminController::class, 'dashboard'])->name('reports');
-
-
-
-
-
-
-
-
-
-
-
-
+Route::get('/create', [AdminController::class, 'createcontract'])->name('createcontract');

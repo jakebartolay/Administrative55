@@ -18,6 +18,26 @@ class AdminController extends Controller
         return view('login');
     }
 
+    public function task()
+    {
+        return view('task');
+    }
+    
+    public function document()
+    {
+        return view('document');
+    }
+
+    public function contract()
+    {
+        return view('contract');
+    }
+
+    public function createcontract()
+    {
+        return view('createcontract');
+    }
+
     public function LoginAdmin(Request $request)
     {
         $user = user()->id();
@@ -27,4 +47,5 @@ class AdminController extends Controller
 
         ///SET UP LOGIN NATIN MAMA
     }
+
 }

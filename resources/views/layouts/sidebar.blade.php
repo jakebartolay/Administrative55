@@ -56,14 +56,7 @@
                             <li><a href="{{route('createcontract')}}" data-bs-original-title=""
                                     title="">Create Contract</a></li>
                         </ul>
-                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{ route('reports')}}">
-                <svg class="stroke-icon">
-                  <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-form') }}"></use>
-                </svg>
-                <svg class="fill-icon">
-                  <use href="{{ asset('assets/svg/icon-sprite.svg#fill-form') }}"></use>
-                </svg><span>Reports </span></a></li>
-        
+
       </nav>
     </div>
   </div>
