@@ -222,6 +222,26 @@
                                   </div>
                               </div>
                       @endforeach
+
+                      @if($uploadedFiles->count() > 0)
+                        <h2>Your Uploaded Files:</h2>
+                        <ul>
+                            @foreach($uploadedFiles as $file)
+                                <li>
+                                    File Name: {{ $file->file_name }}
+                                    @if(strtolower(pathinfo($file->file_path, PATHINFO_EXTENSION)) == 'pdf')
+                                        <br>
+                                        <embed src="{{ asset('storage/pdfs/' . $file->file_path) }}" type="application/pdf" width="600" height="400" />
+                                    @else
+                                        <br>
+                                        <a href="{{ asset('storage/pdfs/' . $file->file_path) }}" target="_blank">Download</a>
+                                    @endif
+                                </li>
+                            @endforeach
+                        </ul>
+                    @else
+                        <p>No uploaded files found.</p>
+                    @endif
                   </ul>
               </div>
           </div>

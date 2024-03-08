@@ -44,3 +44,5 @@ Route::post('/document/upload', [AdminController::class, 'upload'])->name('uploa
 Route::get('/contract', [AdminController::class, 'contract'])->name('contract');
 
 Route::get('/create', [AdminController::class, 'createcontract'])->name('createcontract');
+Route::post('/pdf', [AdminController::class, 'pdfcontract'])->name('pdf.contract');
+Route::post('/contract', [AdminController::class, 'contracts'])->name('contracts.store');

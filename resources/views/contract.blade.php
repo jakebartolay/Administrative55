@@ -34,19 +34,39 @@
                     <div class="file-content">                        
                             <table class="display" id="data-source-1" style="width:100%">
                             
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Company</th>
-                                        <th>Type of Files</th>
-                                        <th>File</th>
-                                        <th>Status</th>
-                                        <th>E-mail</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                               
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Company/Position</th>
+                                    <th>Type of Files</th>
+                                    <th>File</th>
+                                    <th>Phone Number</th>
+                                    <th>E-mail</th>
+                                    <th>Signature</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($data as $dat)
+                                <tr>
+                                    <td>{{ $dat->first_name }} {{ $dat->last_name }}</td>
+                                    <!-- Add other columns based on your Contract model fields -->
+                                    <td>{{ $dat->company_position }}</td>
+                                    <td>{{ $dat->file_type }}</td>
+
+                                   
+                                    <td><a href="test">PDF</a></td>
+
+                                    <td>{{ $dat->phone_number }}</td>
+
+                                    <td>{{ $dat->email_address }}</td>
+                                    <td>
+                                        <a href="{{ asset('storage/signature_files/' . $dat->signature_party1) }}" target="_blank">View File</a>
+                                    </td>
+                                    
+                                </tr>
+                                @endforeach
+                            </tbody>
+
                             </table>
                         </div>
                     </div>
