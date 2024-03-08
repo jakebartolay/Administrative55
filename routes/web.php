@@ -21,9 +21,12 @@ Route::get('/', [AdminController::class, 'login'])->name('/');
 
 Route::get('/login', [AdminController::class, 'LoginAdmin'])->name('login');
 
+Route::get('/task', [AdminController::class, 'Task'])->name('task');
+
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
 
 Route::get('/document', [AdminController::class, 'dashboard'])->name('document');
+
 
 Route::get('/contract', [AdminController::class, 'dashboard'])->name('contract');
 
