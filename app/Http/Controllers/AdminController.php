@@ -55,9 +55,23 @@ class AdminController extends Controller
         // If authentication fails, redirect back with an error message
         return back()->with('error', 'Username/Email or password is incorrect');
     }
+
+    public function logoutAdmin(Request $request)
+    {
+        if(Auth::check()) {
+            $user = Auth::user();
+
+            // Clear the session and logout
+            $request->session()->flush();
+            Auth::logout();
+    
+            return redirect('/');
+        }
+    
+        return redirect('/'); // If the user is not logged in, redirect to login page
+    }
     
     ////
-
 
     public function task()
     {

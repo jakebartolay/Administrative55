@@ -23,7 +23,7 @@ Route::get('/', [AdminController::class, 'login'])->name('/');
 
 Route::post('/login', [AdminController::class, 'loginAdmin'])->name('login');
 
-Route::post('/logout', [AdminController::class, 'logoutAdmin'])->name('logout');
+Route::get('/logout', [AdminController::class, 'logoutAdmin'])->name('logout');
 
 ///
 
