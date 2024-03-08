@@ -32,7 +32,14 @@ Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
 
 Route::get('/task', [AdminController::class, 'task'])->name('task');
 
+
+/// DOCUMENT MANAGMENT
+
 Route::get('/document', [AdminController::class, 'document'])->name('document');
+Route::post('/document/upload', [AdminController::class, 'upload'])->name('upload');
+
+/// 
+
 
 Route::get('/contract', [AdminController::class, 'contract'])->name('contract');
 

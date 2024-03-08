@@ -68,7 +68,7 @@
 				  <div class="widget-round secondary">
 					<div class="bg-round">
 					  <svg class="svg-fill">
-						<use href="{{ asset('assets/svg/icon-sprite.svg#cart') }}"> </use>
+						<use href="{{ asset('assets/svg/icon-sprite.svg#file') }}"> </use>
 					  </svg>
             <svg class="half-circle svg-fill">
 						<use href="{{ asset('assets/svg/icon-sprite.svg#halfcircle') }}"></use>
@@ -76,10 +76,10 @@
 					</div>
 				  </div>
 				  <div> 
-					<h4>10,000</h4><span class="f-light">Total Documents</span>
+					<h4>0</h4><span class="f-light">Total Documents</span>
 				  </div>
 				</div>
-				<div class="font-secondary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>+50%</span></div>
+				<div class="font-secondary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>{{$doc}}</span></div>
 			  </div>
 			</div>
 			<div class="col-xl-12"> 
@@ -89,7 +89,7 @@
 					<div class="widget-round primary">
 					  <div class="bg-round">
 						<svg class="svg-fill">
-						  <use href="{{ asset('assets/svg/icon-sprite.svg#tag') }}"> </use>
+						  <use href="{{ asset('assets/svg/icon-sprite.svg#contract') }}"> </use>
 						</svg>
             <svg class="half-circle svg-fill">
 						  <use href="{{ asset('assets/svg/icon-sprite.svg#halfcircle') }}"></use>
@@ -97,10 +97,10 @@
 					  </div>
 					</div>
 					<div> 
-					  <h4>4,200</h4><span class="f-light">Total Contracts</span>
+					  <h4>0</h4><span class="f-light">Total Contracts</span>
 					</div>
 				  </div>
-				  <div class="font-primary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>+70%</span></div>
+				  <div class="font-primary f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>0</span></div>
 				</div>
 			  </div>
 			</div>
@@ -116,7 +116,7 @@
 				  <div class="widget-round warning">
 					<div class="bg-round">
 					  <svg class="svg-fill">
-						<use href="{{ asset('assets/svg/icon-sprite.svg#return-box') }}"> </use>
+						<use href="{{ asset('assets/svg/icon-sprite.svg#disliked') }}"> </use>
 					  </svg>
 					  <svg class="half-circle svg-fill">
 						<use href="{{ asset('assets/svg/icon-sprite.svg#halfcircle') }}"></use>
@@ -124,7 +124,7 @@
 					</div>
 				  </div>
           <div> 
-					<h4>7000</h4><span class="f-light">Rejected</span>
+					<h4>0</h4><span class="f-light">Rejected</span>
 				  </div>
 				</div>
 				<div class="font-warning f-w-500"><i class="icon-arrow-down icon-rotate me-1"></i><span>-20%</span></div>
@@ -137,7 +137,7 @@
 					<div class="widget-round success">
 					  <div class="bg-round">
 						<svg class="svg-fill">
-						  <use href="{{ asset('assets/svg/icon-sprite.svg#rate') }}"> </use>
+						  <use href="{{ asset('assets/svg/icon-sprite.svg#like') }}"> </use>
 						</svg>
 						<svg class="half-circle svg-fill">
 						  <use href="{{ asset('assets/svg/icon-sprite.svg#halfcircle') }}"></use>
@@ -145,7 +145,7 @@
 					  </div>
 					</div>
           <div> 
-					  <h4>5700</h4><span class="f-light">Approved</span>
+					  <h4>0</h4><span class="f-light">Approved</span>
 					</div>
 				  </div>
 				  <div class="font-success f-w-500"><i class="icon-arrow-up icon-rotate me-1"></i><span>+70%</span></div>
@@ -161,7 +161,7 @@
 			<div class="card widget-1 widget-with-chart">
 			  <div class="card-body"> 
 				<div> 
-				  <h4 class="mb-1">1,80k</h4><span class="f-light">Request </span>
+				  <h4 class="mb-1">0</h4><span class="f-light">Request </span>
 				</div>
 				<div class="order-chart"> 
 				  <div id="orderchart"></div>
@@ -173,7 +173,7 @@
 			<div class="card widget-1 widget-with-chart">
 			  <div class="card-body"> 
 				<div> 
-				  <h4 class="mb-1">6,90k</h4><span class="f-light">Pending</span>
+				  <h4 class="mb-1">0</h4><span class="f-light">Pending</span>
 				</div>
 				<div class="profit-chart"> 
 				  <div id="profitchart"></div>
@@ -183,11 +183,6 @@
 		  </div>
 		</div>
 	  </div>
-   
-		
-			
-			  
-			  
 	  
 			  
     <script type="text/javascript">

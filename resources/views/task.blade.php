@@ -29,13 +29,13 @@
                      <div class="email-app-sidebar left-bookmark task-sidebar">
                         <div class="media">
                            <div class="media-size-email"><img class="me-3 rounded-circle" src="{{ asset('assets/images/user/user.png')}}" alt=""></div>
-                           <div class="media-body">
-                              <h6 class="f-w-600">MARK JENCO</h6>
-                              <p>Markjecno@gmail.com</p>
+                           <div class="media-body mb-3">
+                              <h6 class="f-w-600">{{$user->name}}</h6>
+                              <p>{{$user->email}}</p>
                            </div>
                         </div>
                         <ul class="nav main-menu" role="tablist">
-                           <li class="nav-item">
+                           <!-- <li class="nav-item">
                               <button class="badge-light-primary btn-block btn-mail w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="me-2" data-feather="check-circle"></i> New Task</button>
                               <div class="modal fade modal-bookmark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                  <div class="modal-dialog modal-lg" role="document">
@@ -121,24 +121,24 @@
                                     </div>
                                  </div>
                               </div>
-                           </li>
+                           </li> -->
                            <li class="nav-item"><span class="main-title"> Views</span></li>
-                           <li><a id="pills-created-tab" data-bs-toggle="pill" href="#pills-created" role="tab" aria-controls="pills-created" aria-selected="true"><span class="title"> Created by me</span></a></li>
+                           <!-- <li><a id="pills-created-tab" data-bs-toggle="pill" href="#pills-created" role="tab" aria-controls="pills-created" aria-selected="true"><span class="title"> Created by me</span></a></li>
                            <li><a class="show" id="pills-todaytask-tab" data-bs-toggle="pill" href="#pills-todaytask" role="tab" aria-controls="pills-todaytask" aria-selected="false"><span class="title"> Today's Tasks</span></a></li>
                            <li><a class="show" id="pills-delayed-tab" data-bs-toggle="pill" href="#pills-delayed" role="tab" aria-controls="pills-delayed" aria-selected="false"><span class="title"> Delayed Tasks</span></a></li>
                            <li><a class="show" id="pills-upcoming-tab" data-bs-toggle="pill" href="#pills-upcoming" role="tab" aria-controls="pills-upcoming" aria-selected="false"><span class="title">Upcoming Tasks</span></a></li>
                            <li><a class="show" id="pills-weekly-tab" data-bs-toggle="pill" href="#pills-weekly" role="tab" aria-controls="pills-weekly" aria-selected="false"><span class="title">This week tasks</span></a></li>
                            <li><a class="show" id="pills-monthly-tab" data-bs-toggle="pill" href="#pills-monthly" role="tab" aria-controls="pills-monthly" aria-selected="false"><span class="title">This month tasks</span></a></li>
-                           <li><a class="show" id="pills-assigned-tab" data-bs-toggle="pill" href="#pills-assigned" role="tab" aria-controls="pills-assigned" aria-selected="false"><span class="title">Assigned to me</span></a></li>
+                           <li><a class="show" id="pills-assigned-tab" data-bs-toggle="pill" href="#pills-assigned" role="tab" aria-controls="pills-assigned" aria-selected="false"><span class="title">Assigned to me</span></a></li> -->
                            <li><a class="show" id="pills-tasks-tab" data-bs-toggle="pill" href="#pills-tasks" role="tab" aria-controls="pills-tasks" aria-selected="false"><span class="title">My tasks</span></a></li>
                            <li>
-                              <hr>
+                              <!-- <hr>
                            </li>
                            <li><span class="main-title"> Tags<span class="pull-right"><a href="#" data-bs-toggle="modal" data-bs-target="#createtag"><i data-feather="plus-circle"></i></a></span></span></li>
                            <li><a class="show" id="pills-notification-tab" data-bs-toggle="pill" href="#pills-notification" role="tab" aria-controls="pills-notification" aria-selected="false"><span class="title"> notification</span></a></li>
                            <li><a class="show" id="pills-newsletter-tab" data-bs-toggle="pill" href="#pills-newsletter" role="tab" aria-controls="pills-newsletter" aria-selected="false"><span class="title"> Newsletter</span></a></li>
                            <li><a class="show" id="pills-business-tab" data-bs-toggle="pill" href="#" role="tab" aria-selected="false"><span class="title"> Business</span></a></li>
-                           <li><a class="show" id="pills-holidays-tab" data-bs-toggle="pill" href="#" role="tab" aria-selected="false"><span class="title"> Holidays</span></a></li>
+                           <li><a class="show" id="pills-holidays-tab" data-bs-toggle="pill" href="#" role="tab" aria-selected="false"><span class="title"> Holidays</span></a></li> -->
                         </ul>
                      </div>
                   </div>
@@ -150,7 +150,7 @@
                <div class="card email-body radius-left">
                   <div class="ps-0">
                      <div class="tab-content">
-                        <div class="tab-pane fade active show" id="pills-created" role="tabpanel" aria-labelledby="pills-created-tab">
+                        <!-- <div class="tab-pane fade active show" id="pills-created" role="tabpanel" aria-labelledby="pills-created-tab">
                            <div class="card mb-0">
                               <div class="card-header d-flex">
                                  <h5 class="mb-0">Created by me</h5>
@@ -382,8 +382,9 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
-                        <div class="fade tab-pane" id="pills-tasks" role="tabpanel" aria-labelledby="pills-tasks-tab">
+                        </div> -->
+                        
+                        <div class="fade tab-pane active show" id="pills-tasks" role="tabpanel" aria-labelledby="pills-tasks-tab">
                            <div class="card mb-0">
                               <div class="card-header d-flex">
                                  <h6 class="mb-0">My tasks</h6>
@@ -454,7 +455,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="fade tab-pane" id="pills-notification" role="tabpanel" aria-labelledby="pills-notification-tab">
+                        
+                        <!-- <div class="fade tab-pane" id="pills-notification" role="tabpanel" aria-labelledby="pills-notification-tab">
                            <div class="card mb-0">
                               <div class="card-header d-flex">
                                  <h6 class="mb-0">notification</h6>
@@ -501,7 +503,7 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
                   </div>
                </div>

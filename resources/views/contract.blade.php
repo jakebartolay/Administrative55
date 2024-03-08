@@ -31,26 +31,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header pb-0 card-no-border">
-                    <div class="file-content">
-       
-            <div class="media">
-             
-                <div class="form-group mb-0">                          
-                </div>
-              </form>
-              <div class="media-body text-end">
-                <form class="d-inline-flex" action="#" method="POST" enctype="multipart/form-data" name="myForm">
-                  <div class="btn btn-primary" onclick="getFile()"> <i data-feather="plus-square"></i>Add New</div>
-                  <div style="height: 0px;width: 0px; overflow:hidden;">
-                    <input id="upfile" type="file" onchange="sub(this)">
-                  </div>
-                </form>
-                <div class="btn btn-outline-primary ms-2"><i data-feather="upload">   </i>Upload  </div>
-              </div>
-            </div>
-          </div>
-                       
-                            
+                    <div class="file-content">                        
                             <table class="display" id="data-source-1" style="width:100%">
                             
                                 <thead>

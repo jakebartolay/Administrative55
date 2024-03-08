@@ -155,14 +155,14 @@
                                         <div class="form-group">
                                             <label for="username_or_email" class="col-form-label">Email Address or Username</label>
                                             <input type="text" class="form-control" id="username_or_email" name="username_or_email" required
-                                                placeholder="Enter your email or username">
+                                                placeholder="Enter your email or username" value="admin">
                                         </div>
 
                                         <div class="form-group mb-4">
                                             <label for="password" class="col-form-label">Password</label>
                                             <div class="form-input position-relative">
                                                 <input type="password" class="form-control" id="password" name="password" required
-                                                    placeholder="*********">
+                                                    placeholder="*********" value="123">
                                             </div>
                                         </div>
 
