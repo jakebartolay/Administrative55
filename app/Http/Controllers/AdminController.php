@@ -18,6 +18,11 @@ class AdminController extends Controller
         return view('login');
     }
 
+    public function task()
+    {
+        return view('task');
+    }
+
     public function LoginAdmin(Request $request)
     {
         $user = user()->id();
@@ -27,4 +32,3 @@ class AdminController extends Controller
 
         ///SET UP LOGIN NATIN MAMA
     }
-}
