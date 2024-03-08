@@ -15,7 +15,6 @@
 @endsection
 
 @section('breadcrumb-items')
-<li class="breadcrumb-item">Apps</li>
 <li class="breadcrumb-item active">Tasks</li>
 @endsection
 

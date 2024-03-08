@@ -14,7 +14,6 @@
 @endsection
 
 @section('breadcrumb-items')
-<li class="breadcrumb-item">Contract Table</li>
 <li class="breadcrumb-item active">Create Contract</li>
 @endsection
 
