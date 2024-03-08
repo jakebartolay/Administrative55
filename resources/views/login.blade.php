@@ -141,39 +141,32 @@
                                         </div>
                                     @endif
 
-                                    <form class="needs-validation theme-form" novalidate action=""
-                                        method="POST">
+                                    <form class="needs-validation theme-form" novalidate action="{{ route('login') }}" method="POST">
                                         @csrf
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="col title text-center justify-content-center">
-                                                <img src="{{ asset('assets/images/logo/logo1.png') }}" alt=""
-                                                    style="height: 50px; width:auto;" class="col-3 d-lg-none">
-                                                <h5 class="col text-dark p-2 pt-2 mt-1 text-center">Sign in to your
-                                                    account
-                                                </h5>
+                                                <img src="{{ asset('assets/images/logo/logo1.png') }}" alt="" style="height: 50px; width:auto;"
+                                                    class="col-3 d-lg-none">
+                                                <h5 class="col text-dark p-2 pt-2 mt-1 text-center">Sign in to your account</h5>
                                             </div>
-
                                         </div>
                                         <hr>
 
                                         <div class="form-group">
-                                            <label for="username_or_email" class="col-form-label">Email Address</label>
-                                            <input type="text" class="form-control" id="username_or_email"
-                                                name="username_or_email" required placeholder="Enter your email">
+                                            <label for="username_or_email" class="col-form-label">Email Address or Username</label>
+                                            <input type="text" class="form-control" id="username_or_email" name="username_or_email" required
+                                                placeholder="Enter your email or username">
                                         </div>
 
                                         <div class="form-group mb-4">
                                             <label for="password" class="col-form-label">Password</label>
                                             <div class="form-input position-relative">
-                                                <input type="password" class="form-control" id="password"
-                                                    name="password" required placeholder="*********">
+                                                <input type="password" class="form-control" id="password" name="password" required
+                                                    placeholder="*********">
                                             </div>
                                         </div>
 
-
-
-                                        <button type="submit" class="btn btn-primary btn-block w-100">Sign
-                                            in</button>
+                                        <button type="submit" class="btn btn-primary btn-block w-100">Sign in</button>
                                     </form>
                                 </div>
                             </div>

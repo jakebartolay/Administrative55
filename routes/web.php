@@ -17,9 +17,16 @@ use App\Http\Controllers\AdminController;
 
 // Route::get('/dashboard', [AdminController::class, 'dashboard']);
 
+/// FOR LOGIN
+
 Route::get('/', [AdminController::class, 'login'])->name('/');
 
-Route::get('/login', [AdminController::class, 'LoginAdmin'])->name('login');
+Route::post('/login', [AdminController::class, 'loginAdmin'])->name('login');
+
+Route::post('/logout', [AdminController::class, 'logoutAdmin'])->name('logout');
+
+///
+
 
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
 
