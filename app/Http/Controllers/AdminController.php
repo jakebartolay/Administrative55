@@ -45,4 +45,3 @@ class AdminController extends Controller
 
         ///SET UP LOGIN NATIN MAMA
     }
-}

@@ -19,6 +19,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', [AdminController::class, 'login'])->name('/');
 
+
 Route::get('/login', [AdminController::class, 'LoginAdmin'])->name('login');
 
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('index');
