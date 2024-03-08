@@ -116,8 +116,8 @@
                 <div class="row m-0">
                     <div class="col-6 left d-none d-md-block d-sm-none text-white">
                         <div>
-                            <img src="{{ asset('assets/images/logo/logo1.png') }}" alt="" id="logo">
-                            <h1>Rkive</h1>
+                            <img src="{{ asset('assets/images/logo/rkive.png') }}" width="250px" height="500" alt="" id="logo">
+                            <!-- <h1>Rkive</h1> -->
                             <h4 class="d-lg-none">Administrative Solutions</h4>
                             <p>Your administrative needs in one place</p>
                         </div>
