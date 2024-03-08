@@ -23,6 +23,7 @@ Route::get('/', function () {
 
 Route::view('index', 'index')->name('index');
 Route::view('createcontract', 'createcontract')->name('createcontract');
+Route::view('task', 'task')->name('task');
 Route::get('/contract',[Contract::class , 'contract'])->name('contract');
 Route::post('/add-contract', [ContractController::class, 'store'])->name('contracts.store');
 Route::get('/document',[Document::class, 'document'])->name('document');
