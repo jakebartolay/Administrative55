@@ -26,6 +26,13 @@
                             <svg class="fill-icon">
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#fill-home') }}"></use>
                             </svg><span>Dashboard</span></a></li>
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{ route('task') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-task') }}"></use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#fill-task') }}"></use>
+                            </svg><span>Task</span></a></li>
             <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="{{ route('document')}}">
                 <svg class="stroke-icon">
                   <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-social') }}"></use>
